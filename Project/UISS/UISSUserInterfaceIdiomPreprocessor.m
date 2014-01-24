@@ -22,7 +22,7 @@
     [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, id object, BOOL *stop) {
         UIUserInterfaceIdiom idiom = (UIUserInterfaceIdiom) [self userInterfaceIdiomFromKey:key];
         
-        if (idiom == NSNotFound) {
+        if (idiom == (UIUserInterfaceIdiom) NSNotFound) {
             [preprocessed setObject:[self preprocessValueIfNecessary:object userInterfaceIdiom:userInterfaceIdiom] forKey:key];
         } else {
             if (idiom == userInterfaceIdiom) {
@@ -37,7 +37,7 @@
     return preprocessed;
 }
 
-- (NSInteger)userInterfaceIdiomFromKey:(NSString *)key;
+- (UIUserInterfaceIdiom)userInterfaceIdiomFromKey:(NSString *)key;
 {
     NSString *lowercaseKey = [key lowercaseString];
     
@@ -46,7 +46,7 @@
     } else if ([@"pad" isEqual:lowercaseKey] || [@"ipad" isEqual:lowercaseKey]) {
         return UIUserInterfaceIdiomPad;
     } else {
-        return NSNotFound;
+        return (UIUserInterfaceIdiom) NSNotFound;
     }
 }
 

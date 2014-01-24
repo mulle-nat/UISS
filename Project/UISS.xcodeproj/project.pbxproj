@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411830291892B30900DCF50B /* UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B438B7143F668000F87518 /* UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4118302A1892B3C100DCF50B /* UISSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = E1914CAD158F99BB00E04977 /* UISSStyle.h */; };
+		4118302B1892B3C400DCF50B /* UISSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8611584DCC70087BB1B /* UISSConfig.h */; };
 		C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */; };
 		C8D2B2E56583BF0D585ECFC4 /* UISSSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B93A4CE1D6D274BC9D3D /* UISSSettingsViewController.h */; };
 		C8D2B403B49E791D1C7C7839 /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
@@ -85,7 +88,6 @@
 		E145C8581584AF820087BB1B /* NSString+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8561584AF820087BB1B /* NSString+UISS.h */; };
 		E145C8591584AF820087BB1B /* NSString+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8571584AF820087BB1B /* NSString+UISS.m */; };
 		E145C85C1584B7D40087BB1B /* UISSPropertySetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C85B1584B7D40087BB1B /* UISSPropertySetterTests.m */; };
-		E145C8631584DCC70087BB1B /* UISSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8611584DCC70087BB1B /* UISSConfig.h */; };
 		E145C8641584DCC70087BB1B /* UISSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8621584DCC70087BB1B /* UISSConfig.m */; };
 		E14698131558313A000F311F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E146980F1558313A000F311F /* first.png */; };
 		E14698141558313A000F311F /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E14698101558313A000F311F /* first@2x.png */; };
@@ -121,7 +123,6 @@
 		E17E43BE159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E43BC159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.m */; };
 		E18C7C1F158F52B1000D45AC /* UISSErrorsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E18C7C1D158F52B1000D45AC /* UISSErrorsViewController.h */; };
 		E18C7C20158F52B1000D45AC /* UISSErrorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18C7C1E158F52B1000D45AC /* UISSErrorsViewController.m */; };
-		E1914CAF158F99BB00E04977 /* UISSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = E1914CAD158F99BB00E04977 /* UISSStyle.h */; };
 		E1914CB0158F99BB00E04977 /* UISSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1914CAE158F99BB00E04977 /* UISSStyle.m */; };
 		E19759FF15725C220076674C /* UISSUserInterfaceIdiomPreprocessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19759FE15725C220076674C /* UISSUserInterfaceIdiomPreprocessorTests.m */; };
 		E19B54E915A7689D005AFD13 /* UISSParserContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54E715A7689D005AFD13 /* UISSParserContext.h */; };
@@ -941,11 +942,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411830291892B30900DCF50B /* UISS.h in Headers */,
 				E1469840155905FE000F311F /* UISSColorValueConverter.h in Headers */,
 				E146984415590709000F311F /* UISSFontValueConverter.h in Headers */,
 				E146984E1559B24C000F311F /* UISSImageValueConverter.h in Headers */,
 				E1469852155A6D0E000F311F /* UISSTextAttributesValueConverter.h in Headers */,
 				E146985A155A85EC000F311F /* UISSParser.h in Headers */,
+				4118302B1892B3C400DCF50B /* UISSConfig.h in Headers */,
+				4118302A1892B3C100DCF50B /* UISSStyle.h in Headers */,
 				E12DA0B0155A9D410066CCC3 /* UISSSizeValueConverter.h in Headers */,
 				E12DA0B4155A9D550066CCC3 /* UISSRectValueConverter.h in Headers */,
 				E12DA0BE155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.h in Headers */,
@@ -972,14 +976,12 @@
 				E1BCCC35157F634B001E4429 /* UISSConsoleViewController.h in Headers */,
 				E1076BEA157F6B1A00886759 /* UISSStatusViewController.h in Headers */,
 				E145C8581584AF820087BB1B /* NSString+UISS.h in Headers */,
-				E145C8631584DCC70087BB1B /* UISSConfig.h in Headers */,
 				E13B646615890CC800E3613B /* UISSArgumentValueConverter.h in Headers */,
 				E123BA1E158A38FA004F8633 /* UISSAppearancePrivate.h in Headers */,
 				E1C67BD6158CCBD800E220BB /* UISSGeneratedCodeViewController.h in Headers */,
 				E1C08347158E334E007A88E6 /* UISSError.h in Headers */,
 				E1F35EB11593A3F20074389E /* UIView+UISS.h in Headers */,
 				E18C7C1F158F52B1000D45AC /* UISSErrorsViewController.h in Headers */,
-				E1914CAF158F99BB00E04977 /* UISSStyle.h in Headers */,
 				E1BBEBEF1598776D001F7A60 /* UISSStatusView.h in Headers */,
 				E17E43BD159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.h in Headers */,
 				E19B54E915A7689D005AFD13 /* UISSParserContext.h in Headers */,
