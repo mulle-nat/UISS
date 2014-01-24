@@ -5,6 +5,7 @@
 #import "UISSStatusViewController.h"
 #import "UISSStatusWindow.h"
 #import "UISS.h"
+#import "UISSStyle.h"
 
 @interface UISSStatusViewController ()
 

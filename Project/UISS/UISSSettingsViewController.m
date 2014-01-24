@@ -2,6 +2,7 @@
 // Copyright (c) 2013 Robert Wijas. All rights reserved.
 //
 
+#import "UISSStyle.h"
 #import "UISSSettingsViewController.h"
 #import "UISSSettingDescriptor.h"
 

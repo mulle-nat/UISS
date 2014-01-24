@@ -1,9 +1,11 @@
 //
 // Copyright (c) 2013 Robert Wijas. All rights reserved.
 //
+#import <Foundation/Foundation.h>
 
-#import "UISSConfig.h"
-#import "UISSStyle.h"
+@class UISSStyle;
+@class UISSConfig;
+
 
 extern NSString *const UISSWillApplyStyleNotification;
 extern NSString *const UISSDidApplyStyleNotification;

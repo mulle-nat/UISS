@@ -4,6 +4,7 @@
 
 #import "UISS.h"
 
+#import "UISSStyle.h"
 #import "UISSStatusViewController.h"
 #import "UISSPropertySetter.h"
 #import "UISSConsoleViewController.h"
